@@ -21,7 +21,8 @@ defmodule FindTheSymmetricDifference.MixProject do
   # Run "mix help deps" to learn about dependencies.
   defp deps do
     [
-      {:ex_parameterized, "~> 1.3.7"}
+      {:ex_parameterized, "~> 1.3.7", only: [:dev, :test]},
+      {:credo, "~> 1.5", only: [:dev, :test], runtime: false}
     ]
   end
 end
